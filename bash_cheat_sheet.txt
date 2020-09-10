@@ -3,6 +3,7 @@ ls -l :list of long info
 ls -a :list with hidden files
 ls -h : list with readable(human) file sizes
 ls *.jpeg :lists everything with .jpeg 
+
 pwd :print working directory
 q :quit
 mkdir :make directory

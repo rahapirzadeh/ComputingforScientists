@@ -19,4 +19,7 @@ git checkout commitid filename: see a single file from a past commit
 git checkout -- filename: revert unstaged changes
 git revert commitid: undo a commit 
 
-	
+make a repo on git
+	git clone https...
+
+git fetch *remotename*: fetches updates mate to remote repo	

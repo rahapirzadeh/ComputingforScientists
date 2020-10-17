@@ -19,3 +19,14 @@ odeequations=function(t,y,parameters)
   
 } 
 
+#main
+
+
+
+
+
+
+
+
+#plot
+

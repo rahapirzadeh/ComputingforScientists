@@ -45,6 +45,17 @@ odeoutput=lsoda(Y0,timevec,odeequations,parameters);
 
 #discrete time model
 
+dt=.1; 
+t.discrete=seq(0,20,by=dt);
+Uvec=rep(0,length(t.discrete)); Ivec=Uvec; Vvec=Uvec; 
+Uvec[1]=Utc0; Ivec[1]=Itc0; Vvec[1]=Vir0;
+
+for (n in 1:(length(t.discrete)-1)) 
+{
+  Uvec[n+1]=Uvec[n]- dt*p1*Uvec[n]*Vvec[n];
+  Ivec[n+1]=Ivec[n] + dt*(p1*Uvec[n]*Vvec[n]-p2*Ivec[n]);
+  Vvec[n+1]=Vvec[n] + dt*(p3*Ivec[n]-p4*Vvec[n]);
+}
 
 
 #plot

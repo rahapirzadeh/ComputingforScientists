@@ -1,2 +1,2 @@
-# ComputingforScientists
-CS 510
+# Computing for Scientists (CS 510)
+

@@ -60,18 +60,21 @@ for (n in 1:(length(t.discrete)-1))
 
 #plot
 
+#Uninfected plot
 plot(odeoutput[,1],odeoutput[,2],type="l",lwd=2,
      xlab="Time (days)", ylab="", main ="Uninfected", sub = "Continous vs. Discrete",
      log="y",xlim=c(0,20),ylim=c(1,1e9), 
      col="green", col.main="deeppink",cex.main=2)
 lines(t.discrete,Uvec,col="green",lwd=2,lty=2)
 
+#Infected plot
 plot(odeoutput[,1],odeoutput[,3],type="l",lwd=2,
      xlab="Time (days)",ylab="",main ="Infected",sub = "Continous vs. Discrete",
      log="y",xlim=c(0,20),ylim=c(1,1e9),
      col="red",col.main="deeppink",cex.main=2)
 lines(t.discrete,Ivec,type="l",col="red",lwd=2,lty=2)
 
+#Virus plot
 plot(odeoutput[,1],odeoutput[,4],type="l",lwd=2,
      xlab="Time (days)",ylab="",main ="Virus",sub = "Continous vs. Discrete",
      log="y",xlim=c(0,20),ylim=c(1,1e9),
